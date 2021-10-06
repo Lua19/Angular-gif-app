@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { GifsModule } from './gifs/gifs.module';
@@ -14,7 +15,8 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
   imports: [
     BrowserModule,
     SharedModule,
-    GifsModule
+    GifsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
